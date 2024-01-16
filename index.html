@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>enjoy</title>
+
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- <link rel="stylesheet" href="./bootstrap-icons-1.11.2/font/bootstrap-icons.min.css"> -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          >Food<span class="text-info fw-bold">Menu</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-capitalize">pizza</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-capitalize">apple</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-capitalize">potato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-capitalize">mango</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-capitalize">pasta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-capitalize">chicken</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-capitalize">donuts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-capitalize">ice cream</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="main">
+      <div class="container">
+        <input
+          type="text"
+          placeholder="Search..."
+          class="search form-control w-75 mx-auto mt-5 text-info fw-bold"
+        />
+  
+        <select
+          name="foodType"
+          id="foodType"
+          class="form-select w-75 mt-3 mx-auto text-secondary fw-bold"
+        >
+          <option value="" class="bg-dark text-secondary"></option>
+        </select>
+
+
+
+        <div class="row g-3 gy-4 my-5" id="itemRow">
+          <div class="col-lg-3">
+            <div class="item p-2 text-white rounded-4 bg-dark">
+              <figure class="overflow-hidden">
+                <img class="w-100 rounded-4" src="./images/meal-1.jpg" alt="" />
+              </figure>
+              <figcaption>
+                <div
+                  class="headCaption d-flex justify-content-between align-items-center px-1 my-2"
+                >
+                  <span class="fw-bold text-capitalize">pizza</span>
+                  <!-- data-recipeID="47746" for test -->
+                  <button class="detailsBtn btn btn-outline-info py-1" data-recipeID="47746">Detais</button>
+                </div>
+                <p class="text-secondary overflow-y-hidden">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                  architecto veniam odit vel provident eveniet doloremque quidem.
+                  Delectus, quia blanditiis! architecto veniam odit vel provident
+                  eveniet doloremque quidem. Delectus, quia blanditiis!
+                </p>
+              </figcaption>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section
+      id="details"
+      class="d-none rounded-4"
+    >
+      <div class="container">
+        <header class="d-flex justify-content-between align-items-center py-4">
+          <h2 class="text-light">Recipes details</h2>
+          <button id="CloseBtn" class="btn-close btn-close-white"></button>
+        </header>
+        <main>
+          <div id="mainDetails" class="row">
+            <div class="col-md-4">
+              <figure>
+                <img class="w-100 rounded-3" src="./images/meal-2.jpg" alt="" />
+              </figure>
+            </div>
+            <div class="col-md-8 text-light fw-bold ps-4">
+              <h2>
+                Title:
+                <span class="badge bg-info text-black text-uppercase p-2 fs-6"
+                  >Best Pizza Dough Ever</span
+                >
+              </h2>
+              <p>
+                social rank:
+                <span class="badge bg-info text-black p-2">100</span>
+              </p>
+              <p class="mb-1">
+                Recipe ingredients: 
+                <ul class="recipeList list-unstyled">
+                  <li></li>
+                </ul>
+              </p>
+              <a href="" target="_Blank" class="btn btn-info text-white">Od5ol 4o0of</a>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/sweetalert2@11.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
